@@ -1,13 +1,13 @@
 # ua-device [![Build Status](https://travis-ci.org/fex-team/ua-device.svg?branch=master)](https://travis-ci.org/fex-team/ua-device) [![download](https://img.shields.io/npm/dt/ua-device.svg)](https://www.npmjs.com/package/ua-device) [![version](https://img.shields.io/npm/v/ua-device.svg)](https://www.npmjs.com/package/ua-device)
 
-一个用于解析UA来得到用户终端信息的JS库，详情可见[线上demo](http://fex-team.github.io/ua-device/)
+解析UA来得到终端的厂商
 
 ## 下载
 ```bash
-npm install ua-device
+npm install shein-ua-device
 ```
 
-## Why ua-device ？
+## Why shein-ua-device ？
 由于在国内生产PC的厂家有限，大众用户使用的浏览器也主要是当前的一些主流浏览器。因此目前的UA解析库在对OS、浏览器外壳、浏览器内核等的识别率都相当高。**但是由于国内的移动设备的五花八门，对于移动设备的硬件信息是很难用一套通用的方法进行识别，因此 ua-device 诞生**
 
 1. **通过机型识别品牌**: 例如 `[-\s](Galaxy[\s-_]nexus|Galaxy[\s-_]\w*[\s-_]\w*|Galaxy[\s-_]\w*|SM-\w*|GT-\w*|s[cgp]h-\w*|shw-\w*` 这样的匹配规则以及一些从[中关村在线](http://detail.zol.com.cn/cell_phone_index/subcate57_list_1.html)爬取到的机型名称如`G3508`、`G3508J`、`G3508i` 等识别出来该机型的品牌为`Samsung` 因为单纯从UA信息确实无法得到品牌数据，这也是为何很多高Star的UA解析库识别手机品牌成功率只有30%-40%的原因(`ua-device`识别率可见下面测试用例)。
@@ -17,7 +17,7 @@ npm install ua-device
 
 ## 目录结构
 ```
-ua-device/
+shein-ua-device/
 ├── LICENSE
 ├── README.md
 ├── index.js
@@ -47,7 +47,7 @@ npm test
 #   ✓ device_manufacturer识别成功共 2887 条，成功率为 87.70%
 #   ✓ device_model识别成功共 3283 条，成功率为 99.73%
 ```
-有兴趣的同学可以将`ua-device`与其它高star库进行对比，相信对比后无论在识别成功率还是识别内容的准确性上，你都会选择`ua-device`。
+有兴趣的同学可以将`shein-ua-device`与其它高star库进行对比，相信对比后无论在识别成功率还是识别内容的准确性上，你都会选择`ua-device`。
 
 
 ## 调用方式

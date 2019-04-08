@@ -1,7 +1,7 @@
 {
-  "name": "ua-device",
-  "version": "0.1.10",
-  "description": "ua-device是由Baidu WebFE(FEX)团队开发的一个用于解析UA来得到用户终端信息的JS框架",
+  "name": "shein-ua-device",
+  "version": "0.1.3",
+  "description": "解析UA来得到终端的厂商",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -11,25 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fex-team/ua-device.git"
+    "url": "git+https://github.com/stoneyallen/ua-device"
   },
   "keywords": [
     "user-agent",
     "ua-parser",
     "device-parser",
-    "ua-device"
+    "ua-device",
+    "shein"
   ],
   "devDependencies": {
     "mocha": ">2.3.4"
   },
-  "author": "Hongbin Du <duhongbin01@baidu.com>",
-  "contributors": [
-    "Hongbin Du <duhongbin01@baidu.com>",
-    "Jun Zhang <zhangjun08@baidu.com>"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fex-team/ua-device/issues"
-  },
-  "homepage": "https://github.com/fex-team/ua-device"
+  "author": "stoney",
+  "license": "MIT"
 }
